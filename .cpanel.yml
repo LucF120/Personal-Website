@@ -1,4 +1,5 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/wjuhsh6x6mmj/public_html/
-    - /bin/cp -R public_html $DEPLOYPATH
+    - export DEPLOYPATH=/home/wjuhsh6x6mmj/public_html
+    - git --work-tree=$DEPLOYPATH --git-dir=$DEPLOYPATH/.git checkout --force
+    - /bin/chmod -R 755 $DEPLOYPATH
