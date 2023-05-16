@@ -1,0 +1,49 @@
+.small-text {
+    font-size: 24px;
+}
+.medium-text {
+    font-size: 48px;
+
+}
+
+.giant-text {
+   font-size: 96px;
+}
+
+.very-small-image {
+    width: 48px;
+    height: 48px;
+}
+
+.small-image {
+    width: 500px;
+    height: auto;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.red-text {
+    color: red;
+}
+
+.space-above {
+    margin-top: 50px;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+}

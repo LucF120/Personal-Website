@@ -1,0 +1,12 @@
+deployment:
+    tasks:
+    - command: git init
+        cwd: /home/wjuhsh6x6mmj/public_html
+    - command: git remote add origin https://github.com/LucF120/Personal-Website.git
+        cwd: /home/wjuhsh6x6mmj/public_html  # Path to your project's directory
+    - command: git fetch origin
+        cwd: /home/wjuhsh6x6mmj/public_html  # Path to your project's directory
+    - command: git checkout -f main  # Or the branch name you want to deploy
+        cwd: /home/wjuhsh6x6mmj/public_html  # Path to your project's directory
+    - command: git pull origin main  # Or the branch you want to deploy
+        cwd: /home/wjuhsh6x6mmj/public_html  # Path to your project's directory
