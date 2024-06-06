@@ -20,6 +20,6 @@ jobs:
 
     - name: Sync files to cPanel
       run: |
-        rsync -avz --delete --exclude '.git*' ./public_html/ wjuhsh6x6mmj@ftp.lucferrara.com:/home/wjuhsh6x6mmj/public_html/
+        rsync -avz --delete --exclude '.git*' ./public_html/ ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:/home/${{ secrets.FTP_USERNAME }}/public_html/
       env:
         SSH_KNOWN_HOSTS: ftp.lucferrara.com
